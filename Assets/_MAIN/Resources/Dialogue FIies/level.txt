@@ -1,0 +1,89 @@
+playsfx(thunder_strong_01)
+PlayVoice(wakeup)
+SetLayerMedia(cinematic -m "gerbang")
+CreateCharacter(Nando)
+CreateCharacter("Pak Rizal as Pak Rizal" -e true)
+Nando.SetPosition(-1),Pak Rizal.SetPosition(-1)
+narrator "Nando bertemu Pak Rizal di gerbang kampus.", wait(0)
+SetLayerMedia(background -l 0 gerbang)
+ClearLayerMedia(cinematic)
+Nando.Highlight()
+
+wait(2)
+Nando as ??? at 0  [nando1] "Sepertinya aku terlambat"
+Nando.Unhighlight(-i true)
+Nando.Move(1 -spd 1), Pak Rizal.Highlight()
+wait(1)
+Pak Rizal.Move(0.5 -spd 2)
+wait(1)
+Pak Rizal "Selamat Pagi"
+
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+wait(0.5)
+enterNando as ??? at 0.8 [nando3] "Selamat pagi pak"
+Pak Rizal.Move(1 -spd 1), Nando.Move(0 -spd 1)
+
+Nando.Unhighlight(-i true), Pak Rizal.Highlight()
+Pak Rizal " Kamu pasti mahasiswa baru kan"
+
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+enterNando as ??? at 0  [nando2] "Betul, Ini pertama kalinya saya di kampus ini."
+
+Nando.Unhighlight(-i true), Pak Rizal.Highlight()
+Pak Rizal "Selamat datang di Universitas Kanjuruhan Malang.{c} Saya akan menunjukkan lokasi-lokasi penting yang harus kamu kunjungi."
+
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+Nando  "Apa lokasi pertama yang harus saya kunjungi, Pak?"
+
+Pak Rizal.Move(0.6 -spd 1)
+Nando.Unhighlight(-i true), Pak Rizal.Highlight()
+Pak Rizal "Mari kita masuk terlebih dahulu"
+
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+Nando as ??? at 0.2  [nando1] "Siap pak{wc 1}"
+Nando.Unhighlight(-i true),Nando.SetPosition(-0.2)
+SetLayerMedia(cinematic -m "gedung"),Pak Rizal.SetPosition(-1)
+SetLayerMedia(background -l 0 gedung)
+narrator "Pak Rizal membawa Nando ke Gedung Teknik Informatika."
+wait(0)
+SetLayerMedia(background -l 0 gedung)
+ClearLayerMedia(cinematic -b rightLeft)
+wait(1)
+Pak Rizal.Move(0.1 -spd 1),Nando.Move(1 -spd 2),
+wait(2)
+
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+Nando as ??? at 0.8  [nando3] "Ini Gedung apa, Pak Rizal"
+Nando.Unhighlight(-i true), Pak Rizal.Highlight()
+Pak Rizal "Ini adalah Gedung Teknik Informatika, tempat kamu akan menghabiskan banyak waktu sebagai mahasiswa Teknik Informatika.{a} Gedung ini dilengkapi dengan ruang kelas multimedia, laboratorium praktikum, dan perpustakaan digital.{wc 0.5} Kami juga memiliki program unggulan seperti pengembangan perangkat lunak dan kecerdasan buatan."
+Nando "Wow, fasilitasnya sangat lengkap! Saya tidak sabar untuk mulai belajar di sini."
+
+Pak Rizal "Mari kita Lanjut ke Lab.Komputer"
+Nando.Move(0 -spd 2)
+SetLayerMedia(cinematic -m "lab"),Pak Rizal.SetPosition(1.1),Nando.SetPosition(1.1)
+narrator "Pak Rizal mengajak Nando ke Lab Komputer."
+
+wait(2)
+ClearLayerMedia(cinematic -b sides)
+SetLayerMedia(background -l 0 lab)
+wait(1)
+Nando.Move(0 -spd 2),Pak Rizal.Move(1 -spd 1)
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+enterNando as ??? at 0  [nando2] "Lab ini terlihat canggih, Pak."
+Nando.Unhighlight(-i true), Pak Rizal.Highlight()
+Pak Rizal "Ini adalah Lab Komputer, tempat kamu akan belajar banyak tentang teknologi terbaru.{c} Di sini kamu akan mempelajari pemrograman, simulasi jaringan, dan pengembangan aplikasi berbasis teknologi modern.{wc 1} Semua komputer di sini dilengkapi dengan perangkat lunak terbaru."
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+Nando " Ini benar-benar mendukung pembelajaran praktis." 
+
+wait(2)
+SetLayerMedia(background -b leftRight -l 0 pbm)
+narrator "Pak Rizal membawa Nando ke Ruang PMB untuk proses pendaftaran."
+wait(1)
+
+Nando.Unhighlight(-i true), Pak Rizal.Highlight()
+Pak Rizal "Ini adalah Ruang PMB. Kamu akan bertemu Bu Ana untuk memulai proses pendaftaran."
+Pak Rizal.Unhighlight(-i true),Nando.Highlight()
+Nando "Baik, Pak. Terima kasih atas arahannya."
+LoadScene(Mulai)
+
+

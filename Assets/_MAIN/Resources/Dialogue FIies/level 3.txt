@@ -1,0 +1,59 @@
+SetLayerMedia(cinematic -m "wawancara")
+SetLayerMedia(background -l 0 wawancara)
+narrator "Febri memulai Tes wawancara yang diadakan"
+CreateCharacter(Putra),CreateCharacter(Febri)
+Putra.SetPosition(-1),Febri.SetPosition(2)
+ClearLayerMedia(cinematic -b rightLeft)
+Febri.Highlight()
+
+wait(2)
+Febri as ??? at 1 [pose3] "Peserta Selanjutnya Putra"
+narrator "Putra begitu antusias untuk mengikuti tes wawancara"
+Putra.Move(0 -spd 1)
+wait(1)
+
+Putra.Highlight(), Febri.Unhighlight()
+Putra as ??? at 0.2 [pose 9] "Selamat pagi Pak"
+Febri.Highlight(), Putra.Unhighlight()
+Febri as ??? at 1 [pose2] "Selamat pagi, saya mulai tes wawancaraya ya"
+Putra.Highlight(), Febri.Unhighlight()
+Putra "Siap pak"
+Febri.Highlight(), Putra.Unhighlight()
+Febri "Silakan perkenalkan diri Anda."
+
+Putra.Highlight(), Febri.Unhighlight()
+Putra "Terima kasih, Pak. Nama saya Putra Aditya, lulusan SMA Negeri Malang, dan saya sangat berminat untuk bergabung dengan program studi Teknik Informatika."
+
+Febri.Highlight(), Putra.Unhighlight()
+Febri "Baik, Putra. Apa yang memotivasi Anda untuk memilih jurusan ini?"
+
+Putra.Highlight(), Febri.Unhighlight()
+Putra "Saya percaya jurusan ini dapat membantu saya mencapai cita-cita saya di bidang pengembangan teknologi, khususnya dalam bidang rekayasa perangkat lunak."
+
+Febri.Highlight(), Putra.Unhighlight()
+Febri "Bagus. Pertanyaan terakhir, apa rencana Anda lima tahun ke depan jika diterima di sini?"
+
+Putra.Highlight(), Febri.Unhighlight()
+Putra as ??? at 0.2 [pose 3] "Lima tahun ke depan, saya ingin menjadi lulusan yang kompeten dan mampu mengembangkan produk teknologi yang dapat bermanfaat bagi masyarakat."
+
+Febri.Highlight(), Putra.Unhighlight()
+Febri: "Waktunya selesai. Terima kasih atas jawaban Anda. Silakan tunggu pengumuman selanjutnya."
+
+Putra.Highlight(), Febri.Unhighlight()
+Putra: "Terima kasih, Pak. Saya sangat menghargai kesempatan ini."
+Putra as ??? at 0.2 [pose 6] "Izin keluar Pak Febri"
+Febri: "Sama- sama semoga kamu lulus Putra"
+Putra.Move(-1 -spd 1)
+
+SetLayerMedia(cinematic -m "kota")
+Putra.SetPosition(2),Febri.SetPosition(2)
+narrator "Wawancarapun Selesai{wc 1}Seminggu kemudian pihak kampus member pesan bahwa Putra lolos menjadi Mahasiswa Unikama{wc 1} Putra pun kegirangan mengetahui itu"
+ClearLayerMedia(cinematic -b rightLeft)
+Putra.Move(0.6 -spd 1)
+Putra "Hore Aku menjadi mahasiswa baru Unikama, Minggu depan aku harus mengikuti orientasi mahasiswa baru"
+
+LoadScene(level4)
+
+
+
+

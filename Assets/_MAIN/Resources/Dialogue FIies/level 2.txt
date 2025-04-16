@@ -1,0 +1,40 @@
+SetLayerMedia(cinematic -m "kelas")
+SetLayerMedia(background -l 0 kelas)
+CreateCharacter(Putra),CreateCharacter(Febri)
+Putra.SetPosition(-1),Febri.SetPosition(2)
+ClearLayerMedia(cinematic -b rightLeft)
+Putra.Highlight(),Febri.Unhighlight()
+
+wait(2)
+Putra as ??? at 0  [pose 7] "Oke, Sepertinya aku harus belajar sebentar sebelum test dimulai"
+narrator "1 jam kemudian Pak Febri dabatng untuk memulai tes"
+Putra.Unhighlight(-i true),Febri.Highlight()
+Putra as ??? at 0  [pose 1] "Sepertinya akan dimulai"
+Putra.Unhighlight(),Febri.Highlight()
+Febri as ??? at 1 [pose2] "Silakan kerjakan soalnya dengan tenang. Waktu Anda 90 menit"
+Putra.UnHighlight(),Febri.Unhighlight()
+narrator "Tidak terasa 90 menit telah berlalu"
+Putra.Unhighlight(),Febri.Highlight()
+Febri as ??? at 1 [pose3] "Waktunya selesai, silakan meninggalkan kelas"
+Putra.Highlight(),Febri.Unhighlight()
+Putra "Syukurlah Aku bisa mengerjakan"
+Putra.Move(0.8 -spd 1)
+Putra as ??? at 0.3  [pose 6] "Syukurlah Aku bisa mengerjakan"
+Putra "Aku akan pulang sambil terus belajar"
+Putra.Move (-1 -spd)
+
+SetLayerMedia(cinematic -m "kelas")
+Febri.SetPosition(2)
+SetLayerMedia(background -l 0 kelas)
+narrator "1 Minggu kemudian Putra mendapatkan pesan bahwa dia harus mengikuti test wawancara selanjutnya"
+ClearLayerMedia(cinematic -b rightLeft)
+Putra.Highlight(),Febri.Unhighlight()
+Putra as ??? at 0.5  [pose 4] "Hore Aku lolos kebabak selanjutnya"
+Putra as ??? at 0.5  [pose 1] "Besok aku akan pergi kekampus untuk tes wawancara"
+
+wait(2)
+LoadScene(level3)
+
+
+
+

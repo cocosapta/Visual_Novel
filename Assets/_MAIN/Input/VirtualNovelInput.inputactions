@@ -1,0 +1,67 @@
+{
+    "name": "VirtualNovelInput",
+    "maps": [
+        {
+            "name": "General",
+            "id": "8e393dfb-76d9-447f-aeeb-bb620e528487",
+            "actions": [
+                {
+                    "name": "Next",
+                    "type": "Button",
+                    "id": "c95c84ce-89cf-433b-9a77-a3d6317285cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "74bbeded-f5b6-45d4-8e0b-5fabf9b437eb",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9afe826d-d97e-47de-b727-fc06bb1264d0",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "181d8df6-e9e4-490f-9209-79e092eb97e7",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34cbc2b7-4487-4e52-9463-390bf2e31c15",
+                    "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

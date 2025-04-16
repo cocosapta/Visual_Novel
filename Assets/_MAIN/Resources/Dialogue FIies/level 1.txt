@@ -1,0 +1,110 @@
+narrator "seorang pemuda yang antusias dengan dunia teknologi, bercita-cita menjadi mahasiswa Teknik Informatika di Universitas PGRI Kanjuruhan Malang"
+SetLayerMedia(cinematic -m "logo")
+CreateCharacter(Putra),CreateCharacter(Putri)
+Putra.SetPosition(-1),Putri.SetPosition(2)
+SetLayerMedia(background -l 0 logo)
+ClearLayerMedia(cinematic)
+Putra.Highlight()
+
+wait(2)
+Putra.Move(0 -spd 1)
+Putra as ??? at 0  [pose 2] "Sepertinya hari ini aku beruntung karena ada kakak-kakak yang mengadakan sosialisasi kampus"
+wait(1)
+Putri.Move(1 -spd 2)
+Putra as ??? at 0.3 [pose 3] "Permisi Kak, saya dapat informasi bahwa Universitas PGRI Kanjuruhan Malang membuka pendaftaran jalur reguler"
+Putri.Highlight(),Putra.Unhighlight(-i true)
+Putri "Bener sekali, kalau boleh tahu nama kamu siapa?"
+Putra.Highlight(),Putri.Unhighlight(-i true)
+Putra "Namaku Putra kak, dari SMA Negeri Malang"
+Putri.Highlight(),Putra.Unhighlight(-i true)
+Putri "kalau begitu aku jelaskan Alur Pendaftaran jalur reguler terlebih dahulu ya"
+wait(1)
+SetLayerMedia(cinematic -m "alur")
+
+narrator "Putri menjelaskan Alur Pendaftaran jalur reguler kepada Putra", wait(0)
+SetLayerMedia(background -l 0 alur)
+ClearLayerMedia(cinematic -b rightLeft)
+Putra as ??? at 0  [pose 2] "Baik kak"
+Putra.Unhighlight(-i true),Putri.Highlight()
+Putri "Langkah pertama adalah mengisi form pendaftaran online di website pmb.unikama.ac.id. Pastikan data yang Putra masukkan benar.{wc 1}Setelah itu, Putra akan menerima pesan konfirmasi melalui email atau WhatsApp,{wc 1}yang berisi nomor virtual account BRI untuk pembayaran biaya pendaftaran sebesar Rp 300.000."
+Putra.Highlight(),Putri.Unhighlight()
+
+Putra "Setelah melakukan pembayaran biaya pendaftaran, apa tahap berikutnya?"
+Putra.Unhighlight(-i true),Putri.Highlight()
+Putri "Setelah pembayaran selesai, Putra akan menerima pesan berisi username, password, dan link untuk login ke sistem PMB.{wc 1}Di sistem ini, Putra dapat melanjutkan ke Tahap 2 untuk tes online"
+Putra.Highlight(),Putri.Unhighlight()
+
+
+Putra "Setelah tes online selesai, bagaimana proses selanjutnya?"
+Putra.Unhighlight(-i true),Putri.Highlight()
+Putri "Jika Putra lolos tes, Putra akan dapat langsung mengakses Tahap 3, yaitu pembayaran biaya registrasi.{wc 1}Pembayaran dilakukan ke nomor virtual account BRI sesuai jumlah tagihan yang tertera."
+Putra.Highlight(),Putri.Unhighlight()
+
+
+Putra "Setelah menyelesaikan pembayaran registrasi, apa yang harus Putra siapkan?"
+Putra.Unhighlight(-i true),Putri.Highlight()
+Putri "Langkah berikutnya adalah dokumen pemberkasan.{wc 1}Dokumen yang perlu diserahkan ke kantor PMB Unikama meliputi:{wc 1}Rapor/Ijazah SMA atau sederajat, KTP dan KK, Bukti pembayaran pendaftaran dan registrasi,{wc 1}Serta dokumen pendukung lain seperti foto. Semua dokumen ini difotokopi sebanyak tiga rangkap."
+Putra.Highlight(),Putri.Unhighlight()
+
+
+Putra "Setelah proses pemberkasan, apa yang akan dilakukan selanjutnya?"
+Putra.Unhighlight(-i true),Putri.Highlight()
+Putri "Setelah pemberkasan selesai, Putra akan mendapatkan Nomor Induk Mahasiswa (NIM) di kantor PMB Unikama.{wc 1}Kemudian, petugas PMB akan mengarahkan Putra ke kantor BAA untuk pendataan MABA dan kantor BAU untuk perlengkapan mahasiswa baru seperti jas almamater."
+Putra.Highlight(),Putri.Unhighlight()
+
+
+Putra "Bagaimana cara mendapatkan informasi mengenai PKKMB atau kegiatan ospek?"
+Putra.Unhighlight(-i true),Putri.Highlight()
+Putri "Informasi mengenai PKKMB (ospek) akan disampaikan melalui Instagram atau website Kemahasiswaan Unikama di mhs.unikama.ac.id"
+Putra.Highlight(),Putri.Unhighlight()
+SetLayerMedia(cinematic -m "logo")
+SetLayerMedia(background -l 0 logo)
+narrator "Putra merupakan seorang pemuda yang antusias dengan dunia teknologi, bercita-cita
+menjadi mahasiswa Teknik Informatika di Universitas PGRI Kanjuruhan
+Malang"
+ClearLayerMedia(cinematic)
+Putra as ??? at 0.3 [pose 3] "Terimakasih Kak atas penjelasannya"
+Putra.Unhighlight(-i true),Putri.Highlight()
+putri "Program studi mana yang kamu pilih?"
+Putra.Highlight(),Putri.Unhighlight()
+Putra "Kemungkinan Teknik Informatika kak"
+Putra.Unhighlight(-i true),Putri.Highlight()
+putri "Semangat ya, kamu bisa langsung datang kekampus untuk melakukan pendaftar jika mengalami kendala"
+Putra.SetPosition(-1),Putri.SetPosition(2)
+ClearLayerMedia(background)
+narrator "Putra Kembali kerumah untuk mengambil dokumen yang dibutuhkan untuk mendaftar"
+
+SetLayerMedia(cinematic -m "antri")
+
+narrator "Pagi hari Putra datang kekampus untuk konfirmasi pendaftar{wc 1}Putra tidak meneriama konfirmasi pendaftar melalui e-mail atau Whatsapp ", wait(0)
+SetLayerMedia(background -l 0 antri)
+CreateCharacter(Febri), Febri.SetPosition(2)
+ClearLayerMedia(cinematic -b rightLeft)
+
+Putra.Highlight(),Febri.Unhighlight()
+Putra as ??? at 0.3 [pose 7] "Wah ternyata banyak orang, sepertinya aku salah tempat untuk konfirmasi"
+Putra.Unhighlight(),Febri.Highlight()
+Febri as ??? at 1 [pose3] "Hallo ada yang bisa saya bantu"
+Putra.Highlight(),Febri.Unhighlight()
+wait(1)
+
+Putra as ??? at 0.5 [pose 8] "Permisi Pak saya ingin konfirmasi pendaftar{wc 1}Karena waktu saya selesai daftar saya tidak mendapatkan konfirmasi sama sekali"
+Putra.Unhighlight(),Febri.Highlight()
+Febri "Nama dan asal Sekolah"
+Putra.Highlight(),Febri.Unhighlight()
+Putra "Putra pak, SMA Negeri Malang"
+Putra.Unhighlight(),Febri.Highlight()
+Febri as ??? at 1 [pose2] "Maaf Putra nomor WhatsApp kamu sepertinya salah waktu pendaftar alhasil sistem tidak bisa konfirmasi pendaftar"
+Putra as ??? at 0.3 [pose 3] "Maafkan saya pak, nomor WhatsApp saya +62......"
+Febri as ??? at 0.8 [pose1] "Apakah sudah masuk Putra"
+Putra "Sudah Pak Terimakasih atas bantuannya saya lanjut ke ATM untuk melakukan pembayaran"
+Febri "Sama-sama putra hati-hati dijalan"
+Putra as ??? at 0 [pose 6] "Sebaiknya aku lebih teliti lagi"
+SetLayerMedia(cinematic -m "antri")
+
+
+
+
+LoadScene(level2)
+
+

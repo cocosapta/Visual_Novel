@@ -1,0 +1,14 @@
+
+print_lp("This is a command running straight from our dialogue file")
+
+John "Move Left" moveCharDemo(left)
+
+"Move Right" moveCharDemo(right)
+
+John"sssssssssssss" playSong("Funky Beets" -v 0.75 -p 1), setMood(chill)
+
+Elen "yousadas s as." playVoice("e_d1_v2" -v 1.5), setBackground(Room1 -t "Diagonal Lines" -s 3.5)
+
+setAccomplishment("A lessss" true), setCLI(Elen 0:Angle1 1:Intrigued -a 2.3 -1 true)
+
+showScene(false), StopMusic(all -s 1.5)

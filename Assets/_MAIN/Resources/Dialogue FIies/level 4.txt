@@ -1,0 +1,55 @@
+SetLayerMedia(cinematic -m "gedung")
+CreateCharacter(Putra),CreateCharacter(Putri)
+narrator "3 minggu kemudian"
+Putra.SetPosition(-1),Putri.SetPosition(2)
+SetLayerMedia(background -l 0 gedung)
+ClearLayerMedia(cinematic)
+Putra.Highlight()
+
+Putra as ??? at 0.3  [pose 4] "Akhirnya aku sampai juga"
+Putra.Unhighlight(-i true)
+wait(1)
+Putri.Highlight()
+wait(1)
+Putra.Move(0.5 -spd 1)
+enterPutri as ??? at 0.8 [pose 1] "Putra, selamat datang di Universitas PGRI Kanjuruhan Malang!{wc 1}Orientasi kampus dilakukan di gedung sebelah putra"
+wait(0)
+Putra "Terimakasih informasinya kak Putri"
+enterPutri as ??? at 0.8 [pose 1] "sama-sama Putra"
+Putra.Move(2 -spd 1)
+Putri.Move(-1 -spd 1)
+wait(1)
+SetLayerMedia(cinematic -m "antri")
+CreateCharacter(Febri )
+Febri.SetPosition(2),Putra.SetPosition(-1)
+SetLayerMedia(background -l 0 "antri")
+narrator "Putra mengikuti orientasi kampus dengan mahasiswa baru lainnya"
+ClearLayerMedia(cinematic)
+Putra.Highlight()
+Febri as ??? at 1 [pose2] "Selamat pagi semuanya. kita akan keliling kampus kita bagi berdasarkan Program Studi"
+
+SetLayerMedia(cinematic -m "05")
+Febri.SetPosition(-1),Putra.SetPosition(-1)
+SetLayerMedia(background -l 0 "05")
+ClearLayerMedia(cinematic)
+Putra.Unhighlight(-i true),Febri.Highlight()
+Putra.Move(0.3 -spd 1)
+Febri as ??? at 0.5 [pose2] "Ini adalah Kolam renang dan nanti kita akan keruang Teknik Informaitk tempat kamu akan belajar"
+Febri.Move(-1 -spd 1)
+Putra.Move(-1 -spd 1)
+
+
+SetLayerMedia(cinematic -m "gedung")
+Febri.SetPosition(2),Putra.SetPosition(2),Putri.SetPosition(-1)
+SetLayerMedia(background -l 0 "gedung")
+ClearLayerMedia(cinematic)
+Putra.Move(1 -spd 1)
+Febri as ??? at 0.5 [pose2] "Ini adalah Gedung rektor dan kalian boleh untuk keliling kampus sendiri"
+Febri.Move(-1 -spd 1)
+Putra.Move(0.8 -spd 2)
+Putra "Kampus ini keren banget. Aku sudah nggak sabar memulai kuliah!"
+SetLayerMedia(cinematic -m "gedung")
+narrator "Perjalanan Putra menuju kampus impiannya penuh tantangan, tetapi ia berhasil melewati setiap tahap dengan baik.{wc 1}Kini, ia resmi menjadi mahasiswa Teknik Informatika di Unikama, siap mengejar cita-citanya di dunia teknologi."
+
+wait(2)
+LoadScene(end)
